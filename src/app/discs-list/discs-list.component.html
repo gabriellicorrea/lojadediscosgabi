@@ -1,0 +1,25 @@
+<h2>{{listLabel}}</h2><!--listLabel esta refernciando uma variavel em product-list.componetn.ts-->
+
+<!--*ngFor cria um laco de repeticao-->
+<!--declara um variavel e faca com que ela varra todo products
+se tiver 200 produtos ele vai listar todos
+-->
+<div *ngFor="let disc of discs; index as discId"> 
+  <h3>
+    <a [title]="'Detalhes de ' + disc.name"
+      [routerLink]="['/discs', discId]">
+    {{disc.name}}
+    </a>
+  </h3>
+
+ <p *ngIf="disc.description">
+    <b>Descrição:</b> {{disc.description}}
+  </p>
+  <!--*ngIf É O IF-->
+ 
+
+<!--(click) é o js do angular que esta invocando o evento-->
+  
+
+  
+</div>

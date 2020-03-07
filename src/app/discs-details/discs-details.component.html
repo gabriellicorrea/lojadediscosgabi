@@ -1,0 +1,10 @@
+<h2>
+  Detalhes do disco
+</h2>
+
+<div *ngIf="disc">
+  <h2>Nome: {{disc.name}}</h2>
+  <p>Autor: {{disc.author}}</p>
+  <p>Preço: {{disc.price | currency}}</p>
+  <p>Ano de Lançamento: {{disc.year}}</p>
+</div>
